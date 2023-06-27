@@ -1,10 +1,10 @@
 //Entidad cuenta
 
-class cuenta{
+class Cuenta{
 	double saldo;
 	int agencia;
 	int numero;
-	String titular;
+	Cliente titular;
 	
 	
 	//METODO PARA DEPORSITAR
@@ -29,7 +29,7 @@ class cuenta{
 	
 	
 	//METODO PARA TRANSFERIR 
-	public boolean transferir (double valor, cuenta cuentaTranferir) {
+	public boolean transferir (double valor, Cuenta cuentaTranferir) {
 		
 		if (this.saldo>=valor) {
 			this.saldo-=valor;

@@ -3,7 +3,7 @@ public class PruebaMetodos {
 	
 	public static void main(String[] args) {
 		
-		cuenta miCuenta = new cuenta();
+		Cuenta miCuenta = new Cuenta();
 		
 		miCuenta.saldo = 300;
 		
@@ -19,7 +19,7 @@ public class PruebaMetodos {
 		
 		//Segunda parte
 		
-		cuenta otraCuenta = new cuenta();
+		Cuenta otraCuenta = new Cuenta();
 	
 		otraCuenta.saldo = 1000;
 		
