@@ -5,23 +5,23 @@ public class PruebaMetodos {
 		
 		Cuenta miCuenta = new Cuenta();
 		
-		miCuenta.saldo = 300;
+		miCuenta.depositar(300);
 		
 		miCuenta.depositar(200);
 		
-		System.out.println(miCuenta.saldo);
+		System.out.println(miCuenta.getSaldo());
 		
 		miCuenta.retirar(100);
 		
 		//Primera parte
 		System.out.println();
-		System.out.println(miCuenta.saldo);
+		System.out.println(miCuenta.getSaldo());
 		
 		//Segunda parte
 		
 		Cuenta otraCuenta = new Cuenta();
 	
-		otraCuenta.saldo = 1000;
+		otraCuenta.depositar(1000);
 		
 		boolean transferencia = otraCuenta.transferir(400, miCuenta);
 		
@@ -33,8 +33,8 @@ public class PruebaMetodos {
 		}
 		
 		System.out.println();
-		System.out.println(otraCuenta.saldo);
-		System.out.println(miCuenta.saldo);
+		System.out.println(otraCuenta.getSaldo());
+		System.out.println(miCuenta.getSaldo());
 		
 		
 		

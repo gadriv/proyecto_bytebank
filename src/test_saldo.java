@@ -8,3 +8,7 @@ public class test_saldo {
         otraCuenta.saldo += 1000.0;
 
         System.out.println(miCuenta.saldo);
+        
+	}
+	
+}
