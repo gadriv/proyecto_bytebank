@@ -12,7 +12,7 @@ public class testReferecia2 {
 		
 		//Creamos un objeto para una nueva cuenta.
 		
-		Cuenta nuevaCuenta = new Cuenta();
+		Cuenta nuevaCuenta = new Cuenta(23,56);
 		
 		//nuevaCuenta.titular = nuevoCliente; //AQUI SE ESTABLECE LA REFERENCIA ENTRE EL BJETO CLIENTE Y EL OBJETO CUENTA
 		

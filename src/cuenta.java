@@ -7,6 +7,28 @@ class Cuenta{
 	private int numero;
 	private Cliente titular = new Cliente();
 	
+	private static int total=0; //Creamos una variable estatica para control secuencias, en este caso la cantidad de agencias.
+	
+	
+	public Cuenta(int agencia , int numero) {
+		
+		if(agencia <= 0 || numero <= 0 ) {
+			//System.out.println("No puedes asignar 0 o negativos");
+			
+			this.agencia = 1;
+			this.numero = 1;
+			
+		}else {
+			this.numero = numero;
+			this.agencia = agencia;
+			total++;
+		}
+		
+		System.out.println("Numero de agencia agregadas " + total);
+		
+	}
+	
+	
 	
 	//METODO PARA DEPORSITAR
 	// Este metodo no retorna valor para este ejemplo
@@ -77,6 +99,11 @@ class Cuenta{
 		}
 	}
 	
+	
+	public static int setTotal() {
+		
+		return Cuenta.total;
+	}
 
 	
 }

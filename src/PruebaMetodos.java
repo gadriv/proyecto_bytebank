@@ -3,7 +3,7 @@ public class PruebaMetodos {
 	
 	public static void main(String[] args) {
 		
-		Cuenta miCuenta = new Cuenta();
+		Cuenta miCuenta = new Cuenta(99,987);
 		
 		miCuenta.depositar(300);
 		
@@ -19,7 +19,7 @@ public class PruebaMetodos {
 		
 		//Segunda parte
 		
-		Cuenta otraCuenta = new Cuenta();
+		Cuenta otraCuenta = new Cuenta(67,45);
 	
 		otraCuenta.depositar(1000);
 		

@@ -3,7 +3,7 @@ public class TestReferenciaInicializacion {
 	
 	public static void main(String[] args) {
 		
-		Cuenta nuevaCuenta = new Cuenta();
+		Cuenta nuevaCuenta = new Cuenta(3,4);
 		
 		Cliente nuevoCliente = new Cliente();
 		

@@ -2,7 +2,7 @@
 public class pruebaAcceso {
 	
 	public static void main(String[] args) {
-		Cuenta cuenta = new Cuenta();
+		Cuenta cuenta = new Cuenta(34,45);
 		
 		cuenta.setAgencia(22);
 		cuenta.depositar(400); 

@@ -3,7 +3,7 @@ public class TestReferenciaNull {
 
 	public static void main(String[] args) {
 		
-		Cuenta nuevaCuenta = new Cuenta();
+		Cuenta nuevaCuenta = new Cuenta(1,5);
 		
 		Cliente nuevoCliente = new Cliente();// Este referencia se agrego despues para validar que el resultado NULL
 		nuevaCuenta.setTitular(nuevoCliente);
